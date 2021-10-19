@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Hi Username"
+                android:textColor="@color/button"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/summaryCard"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#DDDDDD"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textName">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/top_sea_green"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/summaryTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Summary"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/totalProjects"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:text="Total Projects Participated: "
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/totalProjectsInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="total"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:gravity="center"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/currentProjects"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:text="Current Projects: "
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/currentProjectsInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="total"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/projectInvites"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:text="Pending Project Invites: "
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/projectInvitesInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="total"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/balance"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:text="Balance: "
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/balanceInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="total"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/swipeProjectsCardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swipe towards left on the below project card, to view the details of your active projects."
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/summaryCard">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/projectsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="@id/summaryCard"
+                app:layout_constraintRight_toRightOf="@id/summaryCard"
+                app:layout_constraintTop_toBottomOf="@id/swipeProjectsCardText"
+                ></androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rewardsCard"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="#DDDDDD"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/projectsRecyclerView"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/top_sea_green"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rewardsSummaryTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Rewards Summary"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"></TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/totalPoints"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="LifeTime Points Earned: "
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/totalPointsInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="total"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:gravity="center"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/redeemedPoints"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Points Redeemed: "
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/redeemedPointsInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="total"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pointsLeftToRedeem"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Points Available to redeem: "
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/pointsLeftToRedeemInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="total"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

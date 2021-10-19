@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00458B"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+          <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+              <TextView
+                  android:id="@+id/pageTitle"
+                  android:layout_width="370dp"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:text="Page title"
+                  android:textColor="@color/white"
+                  android:textSize="24sp"
+                  android:layout_toStartOf="@id/notificationButton"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentLeft="true"></TextView>
+
+              <ImageView
+                  android:id="@+id/notificationButton"
+                  android:layout_width="40dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentEnd="true"
+                  android:foregroundGravity="center"
+                  android:src="@drawable/no_notification_bell"></ImageView>
+
+          </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/activity_main_content_fragment" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

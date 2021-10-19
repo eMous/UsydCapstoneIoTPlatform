@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/projectListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/noProject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="There are no projects to display!!"
+        android:gravity="center"
+        android:textSize="16dp"
+        />
+</RelativeLayout>

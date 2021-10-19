@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.fragment.projectDetail.projectDetailsFragmentAllCardsInfo">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="#E0E6ED"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Progress"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvPoints"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                <TextView
+                    android:id="@+id/tvPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#437c32"
+                    android:layout_marginStart="100dp"
+                    android:background="@drawable/white_circle_drawable"
+                    app:layout_constraintEnd_toEndOf="parent">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yourTaskLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                android:background = "@color/white">
+
+                <!-- in java code write linearlayout.setBackgroundColor(Color.WHITE);
+                android:background="@drawable/white_rectangle_drawable">-->
+
+                <TextView
+                    android:id="@+id/yourTaskTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Task"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnLeave"></TextView>
+                <TextView
+                    android:id="@+id/yourTaskInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/yourTaskTitle"
+                    android:scrollbars="vertical"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/projectDescriptionLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/yourTaskLine"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/descriptionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Project Description"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnLeave"></TextView>
+                <TextView
+                    android:id="@+id/descriptionInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Project Description"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/yourTaskTitle"
+                    android:scrollbars="vertical"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/projectRequirementsLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/projectDescriptionLine"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/requirementTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Project Requirements"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnLeave"></TextView>
+                <TextView
+                    android:id="@+id/requirementInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Project Requirements"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/yourTaskTitle"
+                    android:scrollbars="vertical"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myContributionLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/projectRequirementsLine"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/myContributionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Contribution"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnLeave"></TextView>
+                <TextView
+                    android:id="@+id/myContributionInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Contribution"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/yourTaskTitle"
+                    android:scrollbars="vertical"></TextView>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

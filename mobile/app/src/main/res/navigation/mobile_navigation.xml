@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/new_nav_profile">
+
+    <fragment
+        android:id="@+id/new_nav_profile"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.profile.ProfileFragment"
+        android:label="@string/profile_fragment_label">
+        <action
+            android:id="@+id/action_new_nav_profile_to_projectDetailsFragment"
+            app:destination="@id/projectDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/new_nav_notifications"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.notificationList.NotificationFragment"
+        android:label="@string/notification_fragment_label"
+        tools:layout="@layout/fragment_notification" >
+    </fragment>
+    <fragment
+        android:id="@+id/new_nav_rewards"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.reward.RewardsFragment"
+        android:label="@string/rewards_fragment_label"
+        tools:layout="@layout/fragment_rewards" />
+    <fragment
+        android:id="@+id/new_nav_settings"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.sensorSetting.SensorsInfoFragment"
+        android:label="@string/settings_fragment_label" />
+    <!--        tools:layout="@layout/new_fragment_settings" />-->
+    <fragment
+        android:id="@+id/new_nav_help"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.help.HelpFragment"
+        android:label="@string/help_fragment_label"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/new_nav_proj_list"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.projectList.ProjectListFragment"
+        android:label="@string/project_fragment_label"
+        tools:layout="@layout/fragment_project_list" />
+    <fragment
+        android:id="@+id/projectDetailsFragment"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.projectDetail.ProjectDetailsFragment"
+        android:label="ProjectDetailsFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/projectProgressDetailsFragment"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.projectDetail.ProjectProgressDetailsFragment"
+        android:label="ProjectProgressDetailsFragment" />
+
+    <fragment
+        android:id="@+id/new_nav_dashboard"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.dashboard.DashboardFragment"
+        android:label="@string/dashboard_fragment_label" />
+    <fragment
+        android:id="@+id/projectDetailWalletFragment"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.projectDetail.ProjectDetailWalletFragment"
+        android:label="ProjectDetailWalletFragment" />
+    <fragment
+        android:id="@+id/projectDetailsFragmentAllCardsInfo"
+        android:name="capstone.cs26.iotPlatform.activity.fragment.projectDetail.projectDetailsFragmentAllCardsInfo"
+        android:label="fragment_project_details_all_cards_info"
+        tools:layout="@layout/fragment_project_details_all_cards_info" />
+
+</navigation>

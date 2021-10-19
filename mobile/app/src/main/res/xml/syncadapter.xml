@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync-adapter
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:contentAuthority="capstone.cs26.iotPlatform.sync.provider"
+    android:accountType="IoTPlatform"
+    android:userVisible="false"
+    android:supportsUploading="true"
+    android:allowParallelSyncs="false"
+    android:isAlwaysSyncable="true"/>

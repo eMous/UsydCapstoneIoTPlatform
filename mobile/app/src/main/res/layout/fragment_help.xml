@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.fragment.help.HelpFragment"
+    android:background="#F7F7F7">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNIFIER"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="About us"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textStyle="bold"
+        android:background="#99DDFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle"/>
+
+    <TextView
+        android:id="@+id/aboutUsInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="This app aims to connect the researchers with the potential participants who wish to contribute to the research study by sharing the data collected by their smartphone sensors and earn rewards."
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUs"/>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Useful Information"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:background="#99DDFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsInfo"/>
+
+    <TextView
+        android:id="@+id/tipsInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingStart="10dp"
+        android:text="The user can select the sensors available in his android smartphone and set the frequency to share the data. The user will receive notifications for any project invite sent by the project owner and the user can only respond by accepting or rejecting a request. The user can view the details of a project, monitor the progress of a project and review the rewards earned and redeem the points if applicable. User can also leave a project if he wants."
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tips"/>
+
+    <TextView
+        android:id="@+id/rewards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Rewards"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:background="#99DDFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsInfo"/>
+
+    <TextView
+        android:id="@+id/rewardsInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingStart="10dp"
+        android:text="The participant/user will earn rewards for every data shared as per the reward fixed for a particular type of data for specified number of hours."
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rewards"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

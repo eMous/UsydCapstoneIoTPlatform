@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_logout"
+        android:title="Sign Out"/>
+<!--    <item-->
+<!--        android:id="@+id/example_level_1"-->
+<!--        android:title="example_level_1">-->
+<!--        &lt;!&ndash;        https://developer.android.com/guide/topics/ui/menus&ndash;&gt;-->
+<!--        &lt;!&ndash; "file" submenu &ndash;&gt;-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/example_level_2"-->
+<!--                android:title="example_level_2" />-->
+<!--        </menu>-->
+<!--    </item>-->
+</menu>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/projectTitleCard"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorBg"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/line1">
+
+                <LinearLayout
+                    android:id="@+id/ImagetitleCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="300dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/iot"
+                        android:layout_marginTop="10dp"/>
+                    <LinearLayout
+                        android:id="@+id/titleLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Project Title"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:layout_marginBottom="2dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_gravity="center"></TextView>
+                    <TextView
+                        android:id="@+id/tv_prj_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center"
+                        android:text="Project Title"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14dp"></TextView></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/startTimeLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Project's Start Time"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="3dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"></TextView>
+                    <TextView
+                        android:id="@+id/tv_prj_owner_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="Project's Start Time"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/expectedFundingLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Expected Funding"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:layout_marginTop="3dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_gravity="center"></TextView>
+                    <TextView
+                        android:id="@+id/tv_prj_funding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="Expected funding:"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        ></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/redemptionModeLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Redemption Mode"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:layout_marginTop="3dp"
+                            android:textStyle="bold"
+                            android:gravity="center"></TextView>
+                    <TextView
+                        android:id="@+id/tv_redemption_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="Redmption mode:"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/projectTitleCard"
+                android:layout_marginTop="11dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projectTitleCard">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/yourTaskCard"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="#99DDFF"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageGoal"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/goal2" />
+
+                        <TextView
+                            android:id="@+id/textYourTask"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="My Task"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/projectDescriptionCard"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#99DDFF"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageDescription"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/description1" />
+                        <TextView
+                            android:id="@+id/textProjectDescription"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Description"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"></TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="11dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/projectRequirementsCard"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="#99DDFF"
+                    android:clickable="true"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageRequirements"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/requirements2" />
+
+                        <TextView
+                            android:id="@+id/textRequirements"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Requirements"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/projectProgressCard"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#99DDFF"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageProgress"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/progress2" />
+
+                        <TextView
+                            android:id="@+id/textPrjProgress"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Task Progress"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="11dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line2">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/projectWalletCard"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#99DDFF"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageWallet"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/my_rewards" />
+
+                        <TextView
+                            android:id="@+id/textPrjWallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Project Wallet"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/button"
+                android:text="Accept Project"
+                android:textColor="@color/buttonText"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/button"
+                android:text="Reject Project"
+                android:textColor="@color/buttonText"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+            <Button
+                android:id="@+id/btnLeave"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/button"
+                android:text="Leave Project"
+                android:textColor="@color/buttonText"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

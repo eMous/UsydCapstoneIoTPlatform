@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            >
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="#E0E6ED"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lifetime Points"
+                    android:textSize="26sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvPoints"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                <TextView
+                    android:id="@+id/tvLifetimePoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="392008.0"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:padding="2dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@drawable/white_circle_drawable"
+                    app:layout_constraintEnd_toEndOf="parent">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line1"
+                android:background="#E0E6ED">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Redeemable Points"
+                    android:textSize="26sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvPoints"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                <TextView
+                    android:id="@+id/tvRedeemablePoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100000"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:padding="2dp"
+                    android:layout_marginStart="35dp"
+                    android:background="@drawable/white_circle_drawable"
+                    app:layout_constraintEnd_toEndOf="parent">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pointsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/colorLightBtnText"
+                android:text="The Redeemable points are earned in projects which are funded by Project Owner and can be exchanged based on the project's conversiion rate. Lifetime points are the ones which can be earned from projects funded and not funded."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line2" />
+            <Spinner
+                android:id="@+id/spYearFilter"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="40dp"
+                android:alpha="0.4"
+                android:textColor="@color/black"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:tag="Gender"
+                app:layout_constraintRight_toRightOf="@id/pointsInfo"
+                app:layout_constraintTop_toBottomOf="@id/pointsInfo"></Spinner>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lvPoints"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spYearFilter"></androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tvNoPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="invisible"
+        android:text="You don't have any points."
+        >
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

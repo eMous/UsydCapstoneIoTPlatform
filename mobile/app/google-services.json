@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "204178601091",
+    "firebase_url": "https://sensordatacollector-27ecd.firebaseio.com",
+    "project_id": "sensordatacollector-27ecd",
+    "storage_bucket": "sensordatacollector-27ecd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204178601091:android:5220e07b264878544857b6",
+        "android_client_info": {
+          "package_name": "capstone.cs26.iotPlatform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204178601091-anfr93n3pgfv7h5bvc74ca9lvpr9vnd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiRoC-yIjVf78LgqqjFNgiopWcF0iFzLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204178601091-anfr93n3pgfv7h5bvc74ca9lvpr9vnd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204178601091:android:f697a8c1df2f38584857b6",
+        "android_client_info": {
+          "package_name": "comp3888.group5.sensordatacollector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204178601091-1g8gcadl9sntrfsj4fqsrcfmtgrfc84a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "comp3888.group5.sensordatacollector",
+            "certificate_hash": "7568001acfec2bc73bf416ae1812e2d05b45c7a3"
+          }
+        },
+        {
+          "client_id": "204178601091-ae1431jjioc8cqh7n9tuf2l51cfar22i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "comp3888.group5.sensordatacollector",
+            "certificate_hash": "8199727fe204969d62ecfbd8d9cb5ba80cbb8b8c"
+          }
+        },
+        {
+          "client_id": "204178601091-sdc694v2iimsoqnpegnl0dt0rudrepq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "comp3888.group5.sensordatacollector",
+            "certificate_hash": "c1466265d2b9416c467bf25ad41aa826e13c2ace"
+          }
+        },
+        {
+          "client_id": "204178601091-anfr93n3pgfv7h5bvc74ca9lvpr9vnd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiRoC-yIjVf78LgqqjFNgiopWcF0iFzLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204178601091-anfr93n3pgfv7h5bvc74ca9lvpr9vnd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

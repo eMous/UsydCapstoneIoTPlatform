@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/moneyImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/wallet_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/projectWallet_details"
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyImage">
+
+        <TextView
+            android:id="@+id/projectTitle_title"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:background="#E1F2F7"
+            android:gravity="center_vertical"
+            android:text="Project Title "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/existingFunds_title"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="#E1F2F7"
+            android:gravity="center_vertical"
+            android:text="Existing Funds available to redeem "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/totalPointsEarned_title"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="#E1F2F7"
+            android:gravity="center_vertical"
+            android:text="Total Points earned by me for this Project "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pointsRemaining_title"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="#E1F2F7"
+            android:gravity="center_vertical"
+            android:text="Points Remaining "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/redemptionMode_title"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            android:background="#E1F2F7"
+            android:gravity="center_vertical"
+            android:text="Redemption Mode "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/projectWalletDetails_fetched"
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyImage">
+
+        <TextView
+            android:id="@+id/projectTitle_info"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/existingFunds_info"
+            android:layout_width="240dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/totalPointsEarned_info"
+            android:layout_width="240dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pointsRemaining_info"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/redemptionMode_info"
+            android:layout_width="210dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:text="Redemption only when complete"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextRedeemPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:hint="Enter the number of points you want to redeem"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectWallet_details"></EditText>
+
+    <Button
+        android:id="@+id/btn_redeem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Redeem Points"
+        android:textColor="@color/buttonText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRedeemPoints"></Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

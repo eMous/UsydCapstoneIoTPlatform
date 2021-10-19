@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForgotPassword component Snapshot of component is rendered 1`] = `
+<div
+  className="MuiPaper-root makeStyles-paper-1 MuiPaper-outlined MuiPaper-rounded"
+>
+  <form
+    className="makeStyles-textFieldRoot-2"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-direction-xs-column"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item"
+      >
+        <h5
+          className="MuiTypography-root MuiTypography-h5"
+        >
+          Forgot Password
+        </h5>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item"
+      >
+        <div
+          className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-required Mui-required"
+            data-shrink={false}
+            htmlFor="email-addr"
+            id="email-addr-label"
+          >
+            Email address
+            <span
+              aria-hidden={true}
+              className="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+            >
+               
+              *
+            </span>
+          </label>
+          <div
+            className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+            onClick={[Function]}
+          >
+            <input
+              aria-invalid={false}
+              autoFocus={false}
+              className="MuiInputBase-input MuiOutlinedInput-input"
+              disabled={false}
+              id="email-addr"
+              onAnimationStart={[Function]}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={true}
+              type="email"
+              value=""
+            />
+            <fieldset
+              aria-hidden={true}
+              className="PrivateNotchedOutline-root-3 MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                className="PrivateNotchedOutline-legendLabelled-5"
+              >
+                <span>
+                  Email address
+                   *
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+          
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Reset my password
+          </span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;

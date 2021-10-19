@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">SensorDataCollector</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="editBtnText">Save</string>
+    <string name="resetPasswordText">Reset Password</string>
+    <string name="logoutBtnText">Logout</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_settings">Settings</string>
+    <string name="register">register</string>
+    <string name="cancel">cancel</string>
+    <string name="preference_key">preference_key</string>
+    <string name="other_setting_key">other_setting_key</string>
+    <string name="uid">uid</string>
+    <string name="ON_OFF_checkbox_text">ON/OFF</string>
+    <string name="low_freq">LOW</string>
+    <string name="mid_freq">MID</string>
+    <string name="high_freq">HIGH</string>
+    <string name="active_sensors"><u>Active Sensors</u>:</string>
+    <string name="reward_points"><u>Reward Points</u>:</string>
+
+    <string name="dashboard_fragment_label">Dashboard</string>
+    <string name="profile_fragment_label">My Profile</string>
+    <string name="notification_fragment_label">Notifications</string>
+    <string name="rewards_fragment_label">My Rewards</string>
+    <string name="settings_fragment_label">Sensor Settings</string>
+    <string name="help_fragment_label">Help</string>
+    <string name="project_fragment_label">My Projects</string>
+
+    <!-- Added below mentioned Strings for Sensors Info page
+    <string name="app_name">expandableListView</string>-->
+
+    <string name="group1">"Type 1 : Accelerometer"</string>
+    <string name="group2">"Type 2 : Magnetic_field"</string>
+    <string name="group3">"Type 3 : Orientation"</string>
+    <string name="group4">"Type 4 : Gyroscope"</string>
+    <string name="group5">"Type 5 : Light"</string>
+    <string name="group6">"Type 6 : Pressure"</string>
+    <string name="group7">"Type 7 : Temperature"</string>
+    <string name="group8">"Type 8 : Proximity"</string>
+    <string name="group9">"Type 9 : Gravity"</string>
+    <string name="group10">"Type 10 : Linear_acceleration"</string>
+    <string name="group11">"Type 11 : Rotation_vector"</string>
+    <string name="group12">"Type 12 : Relative_humidity"</string>
+    <string name="group13">"Type 13 : Ambient_temperature"</string>
+    <string name="group14">"Type 14 : Magnetic_field_uncalibrated"</string>
+    <string name="group15">"Type 15 : Game_rotation_vector"</string>
+    <string name="group16">"Type 16 : Gyroscope_uncalibrated"</string>
+    <string name="group17">"Type 17 : Significant_motion"</string>
+    <string name="group18">"Type 18 : Step_detector"</string>
+    <string name="group19">"Type 19 : Step_counter"</string>
+    <string name="group20">"Type 20 : Geomagnetic_rotation_vector"</string>
+    <string name="group21">"Type 21 : Heart_rate"</string>
+    <string name="group22">"Type 22 : Tilt_detector"</string>
+    <string name="group23">"Type 23 : Wake_gesture"</string>
+    <string name="group24">"Type 24 : Glance_gesture"</string>
+    <string name="group28">"Type 28 : Pose_6dof"</string>
+    <string name="group29">"Type 29 : Stationary_detect"</string>
+    <string name="group30">"Type 30 : Motion_detect"</string>
+    <string name="group31">"Type 31 : Heart_beat"</string>
+    <string name="group34">"Type 34 : Low_latency_offbody_detect"</string>
+    <string name="group35">"Type 35 : Accelerometer_uncalibrated"</string>
+    <string name="group36">"Type 36 : Hinge_angle"</string>
+
+
+    <string-array name="group1">
+        <item>Goldfish 3-axis Accelerometer - This sensor gives details about the acceleration of the mobile.</item>
+    </string-array>
+
+    <string-array name="group2">
+        <item>Goldfish 3-axis Magnetic field sensor</item>
+    </string-array>
+
+    <string-array name="group3">
+        <item>Goldfish Orientation sensor</item>
+        <item>Orientation Sensor</item>
+    </string-array>
+
+    <string-array name="group4">
+        <item>Goldfish 3-axis Gyroscope</item>
+    </string-array>
+
+    <string-array name="group5">
+        <item>Goldfish Light sensor</item>
+    </string-array>
+
+    <string-array name="group6">
+        <item>Goldfish Pressure sensor</item>
+    </string-array>
+
+    <string-array name="group8">
+        <item>Goldfish Proximity sensor</item>
+    </string-array>
+
+    <string-array name="group9">
+        <item>Gravity Sensor</item>
+    </string-array>
+
+    <string-array name="group10">
+        <item>Linear Acceleration Sensor</item>
+    </string-array>
+
+    <string-array name="group11">
+        <item>Rotation Vector Sensor</item>
+    </string-array>
+
+    <string-array name="group12">
+        <item>Goldfish Humidity sensor</item>
+    </string-array>
+
+    <string-array name="group13">
+        <item>Goldfish Ambient Temperature sensor</item>
+    </string-array>
+
+    <string-array name="group14">
+        <item>Goldfish 3-axis Magnetic field sensor (uncalibrated)</item>
+    </string-array>
+
+    <string-array name="group15">
+        <item>Game Rotation Vector Sensor</item>
+    </string-array>
+
+    <string-array name="group16">
+        <item>Goldfish 3-axis Gyroscope (uncalibrated)</item>
+    </string-array>
+
+    <string-array name="group20">
+        <item>GeoMag Rotation Vector Sensor</item>
+    </string-array>
+
+    <string-array name="group36">
+        <item>Goldfish hinge sensor0 (in degrees)</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

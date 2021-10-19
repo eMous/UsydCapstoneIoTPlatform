@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard component Snapshot of Dashboard component is rendered 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-justify-xs-center"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item"
+  >
+    <div
+      className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-avatar"
+        >
+          <div
+            className="MuiAvatar-root MuiAvatar-rounded makeStyles-rounded-1 MuiAvatar-colorDefault"
+          >
+            <span
+              aria-hidden={true}
+              className="material-icons MuiIcon-root"
+            >
+              paid
+            </span>
+          </div>
+        </div>
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            Funds Paid Out
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-h4 MuiTypography-colorPrimary MuiTypography-displayBlock"
+          >
+            A$0.00
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item"
+  >
+    <div
+      className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-avatar"
+        >
+          <div
+            className="MuiAvatar-root MuiAvatar-rounded makeStyles-rounded-2 MuiAvatar-colorDefault"
+          >
+            <span
+              aria-hidden={true}
+              className="material-icons MuiIcon-root"
+            >
+              account_balance
+            </span>
+          </div>
+        </div>
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            Funds in Holding (To be paid)
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-h4 MuiTypography-colorPrimary MuiTypography-displayBlock"
+          >
+            A$0.00
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item"
+  >
+    <div
+      className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-avatar"
+        >
+          <div
+            className="MuiAvatar-root MuiAvatar-rounded makeStyles-rounded-3 MuiAvatar-colorDefault"
+          >
+            <span
+              aria-hidden={true}
+              className="material-icons MuiIcon-root"
+            >
+              work
+            </span>
+          </div>
+        </div>
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            Total Projects Running
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-h4 MuiTypography-colorPrimary MuiTypography-displayBlock"
+          >
+            0
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item"
+  >
+    <div
+      className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-avatar"
+        >
+          <div
+            className="MuiAvatar-root MuiAvatar-rounded makeStyles-rounded-4 MuiAvatar-colorDefault"
+          >
+            <span
+              aria-hidden={true}
+              className="material-icons MuiIcon-root"
+            >
+              insights
+            </span>
+          </div>
+        </div>
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            Data Collected (Records)
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-h4 MuiTypography-colorPrimary MuiTypography-displayBlock"
+          >
+            0
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
